@@ -7,12 +7,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client-install": "npm install --prefix client",
-    "start": "node server.js",
-    "server": "nodemon backend/server.js --ignore './frontend/'",
-    "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "cd .. && cd Front-end && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+   
+    "start": "node server.js"
+   
   },
   "license": "ISC",
   "dependencies": {
