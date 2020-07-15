@@ -9,6 +9,7 @@ getProducts = asyncHandler(async (req, res) => {
   const complete= req.query
   console.log("Here are regx",complete)
   const allProducts = await Product.find(complete).limit(10);
+  console.log(allProducts);
   return res.status(200).json({ success: 1, data: allProducts });
 });
 

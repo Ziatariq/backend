@@ -3,5 +3,6 @@ const Product = require("../models/Products");
 
 exports.getProducts = asyncHandler(async (req, res) => {
   const allProducts = await Product.find({});
+  console.log(allProducts);
   return res.status(200).json({ success: 1, data: allProducts });
 });
